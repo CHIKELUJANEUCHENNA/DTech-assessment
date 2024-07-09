@@ -14,11 +14,6 @@ const FormContainer = styled.div`
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 `;
 
-const SectionTitle = styled.h3`
-  margin-top: 20px;
-  margin-bottom: 10px;
-`;
-
 const DateSction = styled.div`
 display: flex;
 justify-content: space-between;
@@ -96,7 +91,6 @@ const ProfileManager: React.FC = () => {
     <FormContainer>
       <form onSubmit={handleSubmit(onSubmit)}>
         <h2>Personal Information</h2>
-        <SectionTitle>Personal Information</SectionTitle>
         <Controller
           control={control}
           name="personalInfo.firstName"
